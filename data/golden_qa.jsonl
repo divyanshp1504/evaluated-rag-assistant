@@ -1,0 +1,18 @@
+{"id": "q01", "question": "How many hours of sleep do most adults need?", "expected_doc": "sleep", "answer_keywords": ["seven hours"]}
+{"id": "q02", "question": "What can be a sign of sleep apnea?", "expected_doc": "sleep", "answer_keywords": ["snoring"]}
+{"id": "q03", "question": "How much moderate aerobic activity should adults get each week?", "expected_doc": "activity", "answer_keywords": ["150 minutes"]}
+{"id": "q04", "question": "Which symptoms during exercise mean I should stop?", "expected_doc": "activity", "answer_keywords": ["chest pain"]}
+{"id": "q05", "question": "What are warning signs of dehydration?", "expected_doc": "hydration", "answer_keywords": ["dark urine"]}
+{"id": "q06", "question": "Why do older adults become dehydrated?", "expected_doc": "hydration", "answer_keywords": ["less thirsty"]}
+{"id": "q07", "question": "What do the two blood pressure numbers mean?", "expected_doc": "blood_pressure", "answer_keywords": ["systolic"]}
+{"id": "q08", "question": "How should I measure blood pressure at home?", "expected_doc": "blood_pressure", "answer_keywords": ["heart level"]}
+{"id": "q09", "question": "What are common symptoms of type 2 diabetes?", "expected_doc": "diabetes", "answer_keywords": ["thirst"]}
+{"id": "q10", "question": "How is type 2 diabetes diagnosed?", "expected_doc": "diabetes", "answer_keywords": ["blood test"]}
+{"id": "q11", "question": "How quickly should leftovers be refrigerated?", "expected_doc": "food_safety", "answer_keywords": ["two hours"]}
+{"id": "q12", "question": "How can I tell if chicken is cooked enough?", "expected_doc": "food_safety", "answer_keywords": ["thermometer"]}
+{"id": "q13", "question": "What SPF sunscreen should I use and how often should I reapply it?", "expected_doc": "sun_safety", "answer_keywords": ["SPF 30"]}
+{"id": "q14", "question": "Besides sunscreen, how can I protect my skin from UV?", "expected_doc": "sun_safety", "answer_keywords": ["hats"]}
+{"id": "q15", "question": "What is the main way to prevent the flu?", "expected_doc": "flu", "answer_keywords": ["vaccine"]}
+{"id": "q16", "question": "Which flu symptoms need urgent attention?", "expected_doc": "flu", "answer_keywords": ["difficulty breathing"]}
+{"id": "q17", "question": "How often should I reapply sunscreen?", "expected_doc": "sun_safety", "answer_keywords": ["two hours"]}
+{"id": "q18", "question": "Is it safe to keep leftovers out overnight?", "expected_doc": "food_safety", "answer_keywords": ["two hours"]}

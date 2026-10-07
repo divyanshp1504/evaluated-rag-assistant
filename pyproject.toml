@@ -1,0 +1,32 @@
+[project]
+name = "evaluated-rag-assistant"
+version = "0.1.0"
+description = "Hybrid-retrieval RAG assistant with guardrails, citations and an evaluation gate in CI."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Divyansh Pant" }]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "scikit-learn>=1.4",
+  "fastapi>=0.110",
+  "pydantic>=2.6",
+  "uvicorn>=0.29",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27", "ruff>=0.5"]
+openai = ["openai>=1.30"]
+bedrock = ["boto3>=1.34"]
+embeddings = ["sentence-transformers>=2.7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]  # long strings/log messages; formatting handled by `ruff format`

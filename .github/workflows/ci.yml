@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check src eval tests && ruff format --check src eval tests
+      - name: Unit and API tests
+        run: pytest -q
+      - name: Evaluation gate (fails the build if quality drops below thresholds)
+        run: python eval/run_eval.py --out eval/results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: eval/results.json
+      - name: Build container
+        run: docker build -t evaluated-rag-assistant:ci .
